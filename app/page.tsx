@@ -39,6 +39,15 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="hero-modern text-white">
+        {/* Background Logo */}
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
+          <img
+            src="/images/williams-logo.jpg"
+            alt=""
+            className="w-full max-w-4xl opacity-5 scale-150"
+          />
+        </div>
+
         <div className="relative container-custom text-center px-4">
           <div className="max-w-5xl mx-auto">
             <div className="inline-block mb-6 px-6 py-2 glass rounded-full text-sm font-semibold animate-fade-in-up">

@@ -40,17 +40,16 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-accent to-secondary rounded-lg opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
-              <div className="relative flex items-center space-x-2">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent to-secondary flex items-center justify-center font-bold text-white text-xl shadow-lg">
-                  W
-                </div>
-                <div className="text-xl md:text-2xl font-bold text-white">
-                  <span className="text-gradient-accent">Williams</span> <span className="hidden sm:inline">Machine Shop</span>
-                </div>
-              </div>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="bg-white rounded-lg p-1.5 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
+              <img
+                src="/images/williams-logo.jpg"
+                alt="Williams Machine Shop Logo"
+                className="h-10 w-auto"
+              />
+            </div>
+            <div className="text-xl md:text-2xl font-bold text-white">
+              <span className="text-gradient-accent">Williams</span> <span className="hidden sm:inline">Machine Shop</span>
             </div>
           </Link>
 
