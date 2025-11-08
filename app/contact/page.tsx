@@ -133,8 +133,101 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Business Hours & Map */}
+            {/* Contact Form */}
             <div>
+              <h2 className="text-4xl font-bold mb-8 text-slate-900">Send Us a Message</h2>
+
+              <div className="card-modern p-8 mb-6">
+                <form action="https://formsubmit.co/orders@williamsmachineshop.com" method="POST" className="space-y-6">
+                  {/* FormSubmit Configuration */}
+                  <input type="hidden" name="_subject" value="New inquiry from Williams Machine Shop website" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_template" value="table" />
+
+                  {/* Name */}
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-semibold text-slate-900 mb-2">
+                      Name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors outline-none bg-white text-slate-900"
+                      placeholder="Your full name"
+                    />
+                  </div>
+
+                  {/* Email */}
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-semibold text-slate-900 mb-2">
+                      Email <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors outline-none bg-white text-slate-900"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+
+                  {/* Phone */}
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-semibold text-slate-900 mb-2">
+                      Phone
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors outline-none bg-white text-slate-900"
+                      placeholder="(555) 123-4567"
+                    />
+                  </div>
+
+                  {/* Subject */}
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-semibold text-slate-900 mb-2">
+                      Subject <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="_subject_custom"
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors outline-none bg-white text-slate-900"
+                      placeholder="How can we help?"
+                    />
+                  </div>
+
+                  {/* Message */}
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-semibold text-slate-900 mb-2">
+                      Message <span className="text-red-500">*</span>
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={6}
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors outline-none bg-white text-slate-900 resize-none"
+                      placeholder="Tell us about your project or inquiry..."
+                    ></textarea>
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    className="w-full px-8 py-4 font-semibold text-white rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 bg-gradient-to-r from-secondary to-accent"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+
               <h2 className="text-4xl font-bold mb-8 text-slate-900">Visit Our Shop</h2>
 
               <div className="card-modern p-8 mb-6">

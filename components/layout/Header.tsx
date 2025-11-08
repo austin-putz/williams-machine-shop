@@ -43,7 +43,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="bg-white rounded-lg p-1.5 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
               <img
-                src="/images/williams-logo.jpg"
+                src="/images/williams-logo.png"
                 alt="Williams Machine Shop Logo"
                 className="h-10 w-auto"
               />

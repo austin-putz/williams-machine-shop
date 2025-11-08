@@ -42,7 +42,7 @@ export default function Home() {
         {/* Background Logo */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
           <img
-            src="/images/williams-logo.jpg"
+            src="/images/williams-logo.png"
             alt=""
             className="w-full max-w-4xl opacity-5 scale-150"
           />

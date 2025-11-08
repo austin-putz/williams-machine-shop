@@ -11,9 +11,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-secondary flex items-center justify-center font-bold text-white text-2xl shadow-lg">
-                W
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="bg-white rounded-lg p-1.5 shadow-lg">
+                <img
+                  src="/images/williams-logo.png"
+                  alt="Williams Machine Shop Logo"
+                  className="h-10 w-auto"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">Williams</h3>
