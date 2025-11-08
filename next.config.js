@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Remove output: 'export' for Vercel deployment
+  // Vercel handles Next.js natively without needing static export
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/williams-machine-shop' : '',
+  // Remove basePath for Vercel - only needed for GitHub Pages
 };
 
 module.exports = nextConfig;
