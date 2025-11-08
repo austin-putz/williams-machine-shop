@@ -81,20 +81,22 @@ export default function Header() {
               </button>
 
               {isDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-72 glass-dark rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up">
-                  <div className="p-2">
-                    {services.map((service) => (
-                      <Link
-                        key={service.name}
-                        href={service.href}
-                        className="flex items-center gap-3 px-4 py-3 rounded-xl text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 group/item"
-                      >
-                        <span className="text-2xl group-hover/item:scale-110 transition-transform duration-200">
-                          {service.icon}
-                        </span>
-                        <span className="font-medium">{service.name}</span>
-                      </Link>
-                    ))}
+                <div className="absolute top-full left-0 pt-2 w-72">
+                  <div className="bg-slate-900/95 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up border border-white/20">
+                    <div className="p-2">
+                      {services.map((service) => (
+                        <Link
+                          key={service.name}
+                          href={service.href}
+                          className="flex items-center gap-3 px-4 py-3 rounded-xl text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 group/item"
+                        >
+                          <span className="text-2xl group-hover/item:scale-110 transition-transform duration-200">
+                            {service.icon}
+                          </span>
+                          <span className="font-medium">{service.name}</span>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -150,7 +152,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="lg:hidden mt-4 glass-dark rounded-2xl p-4 space-y-1 animate-fade-in-up">
+          <nav className="lg:hidden mt-4 bg-slate-900/95 backdrop-blur-lg rounded-2xl p-4 space-y-1 animate-fade-in-up border border-white/20">
             <Link
               href="/"
               className="block px-4 py-3 rounded-xl text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium"
